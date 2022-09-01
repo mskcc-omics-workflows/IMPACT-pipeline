@@ -1,0 +1,10 @@
+{
+    "name": "impact_pipeline",
+    "homePage": "https://github.com/impact_pipeline",
+    "repos": {
+        "nf-core/modules": {
+        },
+        "pipeline-tools/modules": {
+        }
+    }
+}

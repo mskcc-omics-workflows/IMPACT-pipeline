@@ -1,0 +1,8 @@
+.nextflow
+work/
+.nextflow.log*
+*.pyc
+.vscode/
+meta.csv
+sample_fastq.csv
+results/
