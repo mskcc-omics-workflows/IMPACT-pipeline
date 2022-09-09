@@ -1,8 +1,8 @@
 
 
 workflow:
-	@cookiecutter http://crux.mskcc.org:8929/mpath-dms-pipelines/nextflow-template.git --directory="workflow-cookiecutter"
+	@cookiecutter https://github.com/mskcc-omics-workflows/nextflow-template.git --directory="workflow-cookiecutter"
 
 module:
-	@cookiecutter http://crux.mskcc.org:8929/mpath-dms-pipelines/nextflow-template.git --directory="module-cookiecutter"
+	@cookiecutter https://github.com/mskcc-omics-workflows/nextflow-template.git --directory="module-cookiecutter"
 
