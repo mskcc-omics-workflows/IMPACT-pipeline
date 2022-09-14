@@ -2,9 +2,26 @@
     "name": "impact_pipeline",
     "homePage": "https://github.com/impact_pipeline",
     "repos": {
-        "nf-core/modules": {
-        },
-        "pipeline-tools/modules": {
+        "mskcc-omics-workflows/tools": {
+            "git_url": "https://github.com/mskcc-omics-workflows/tools.git",
+            "modules": {
+                "bcl2fastq2": {
+                    "branch": "master",
+                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
+                },
+                "bcl2fastq2/reference": {
+                    "branch": "master",
+                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
+                },
+                "bcl2fastq2/tests": {
+                    "branch": "master",
+                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
+                },
+                "pre_bcl2fastq": {
+                    "branch": "master",
+                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
+                }
+            }
         }
     }
 }
