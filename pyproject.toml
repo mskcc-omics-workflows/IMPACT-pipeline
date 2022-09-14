@@ -7,7 +7,7 @@ authors = ["Yu Hu <huy1@mskcc.org>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 cookiecutter = "^2.1.1"
-nf-core = {url = "http://orion.mskcc.org:7004/packages/staging/+f/565/12949aca2beab/nf-core-2.5.1.tar.gz#sha256=56512949aca2beabde02a3aa867a523f07a671d9a4892b0a386aaf302f46ac68"}
+nf-core = {git = "https://github.com/mskcc-omics-workflows/nfcore-cmd.git", rev = "mskcc/nf-core"}
 
 [tool.poetry.dev-dependencies]
 
