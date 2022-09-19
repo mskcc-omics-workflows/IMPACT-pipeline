@@ -7,11 +7,11 @@
             "modules": {
                 "bcl2fastq2": {
                     "branch": "master",
-                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
+                    "git_sha": "c52941fd80541942ee612f1c95b310c9f11af671"
                 },
                 "pre_bcl2fastq": {
                     "branch": "master",
-                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
+                    "git_sha": "8ccd8051a8ba3394c03a35d855155438a2fdfc11"
                 }
             }
         }
