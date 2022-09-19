@@ -1,6 +1,6 @@
 process PRE_BCL2FASTQ {
     tag "Pre_bcl2fastq"
-    label "process_low"
+    label "process_high"
 
     if (params.enable_conda) {
         exit 1, "Conda environments cannot be used when using pre-bcl2fastq. Please use docker or singularity containers."
