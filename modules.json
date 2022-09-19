@@ -9,14 +9,6 @@
                     "branch": "master",
                     "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
                 },
-                "bcl2fastq2/reference": {
-                    "branch": "master",
-                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
-                },
-                "bcl2fastq2/tests": {
-                    "branch": "master",
-                    "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
-                },
                 "pre_bcl2fastq": {
                     "branch": "master",
                     "git_sha": "d54dd40147daba9d4778f65ecf74f11bc19c373e"
