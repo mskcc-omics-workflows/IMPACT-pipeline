@@ -443,7 +443,7 @@ tabulate = "*"
 type = "git"
 url = "https://github.com/mskcc-omics-workflows/nfcore-cmd.git"
 reference = "mskcc/2.6"
-resolved_reference = "b9abf946732c463973bfab6f80856f64c9a63a74"
+resolved_reference = "9eab5f3ac1b32c125da544f9e5d96d7534e0cc13"
 
 [[package]]
 name = "numpy"
