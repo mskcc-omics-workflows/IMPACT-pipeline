@@ -2,8 +2,8 @@
 // Demultplexing
 //
 
-include { PRE_BCL2FASTQ } from '../../modules/pipeline-tools/modules/pre_bcl2fastq/main.nf'
-include { BCL2FASTQ } from '../../modules/pipeline-tools/modules/bcl2fastq2/main.nf'
+include { PRE_BCL2FASTQ } from '../../modules/msk-tools/pre_bcl2fastq/main.nf'
+include { BCL2FASTQ } from '../../modules/msk-tools/bcl2fastq2/main.nf'
 
 workflow DEMULTIPLEX {
 
@@ -22,11 +22,11 @@ workflow DEMULTIPLEX {
             .set { ch_meta_obj }
 
         ch_meta_obj
-            .multiMap { meta -> 
-                demux_meta: [ meta, samplesheet, run_dir, casava_dir ] }
+            .map { meta -> 
+                [ meta, samplesheet, run_dir, casava_dir ] }
             .set{ ch_meta }
   
-        BCL2FASTQ ( ch_meta.demux_meta )
+        BCL2FASTQ ( ch_meta )
 
 
     emit:
@@ -47,7 +47,13 @@ def create_meta_channel(LinkedHashMap meta_obj) {
         meta.no_lane_split = meta_obj.no_lane_split
     }
     meta.mismatches = meta_obj.mismatch
+    meta.ignore_map = [
+        bcls: true,
+        filter: true,
+        positions: true,
+        controls: true
+    ]
     // For postprocess of demux
     meta.sample2project = meta_obj.sample2project
-    return [ meta ]
+    return meta
 }

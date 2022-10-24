@@ -4,6 +4,18 @@
 
 include { DEMULTIPLEX } from '../demultiplex.nf'
 
+File out_dir = new File(params.casava_dir)
+if (!out_dir.exists()) {
+    out_dir.mkdirs()
+}
+
+
 workflow {
-    DEMULTIPLEX (params.runinfo, params.runparams, params.samplesheet, params.run_dir, params.casava_dir)
+    DEMULTIPLEX (
+        file(params.runinfo),
+        file(params.runparams),
+        file(params.samplesheet),
+        file(params.run_dir),
+        file(out_dir)
+    )
 }
