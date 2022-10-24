@@ -36,7 +36,7 @@ workflow DEMULTIPLEX {
 }
 
 def create_meta_channel(LinkedHashMap meta_obj) {
-    def meta = [:]
+    def meta = [:] //construction of meta map
     meta.id = meta_obj.flowcell
     meta.run = meta_obj.run_name
     meta.pool = meta_obj.exp_name
